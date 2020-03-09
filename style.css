@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Inter|Lora|Muli&display=swap');
+.body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-brown:#f3971b;
+    --color-border:#ffffff34;
+    --font-lora:'Lora', serif;
+    --font-muli:'Muli', sans-serif;
+    --font-inter:'Inter', sans-serif
+}
+/*global classes*/
+.font-lora{
+    font: normal 400 18px var(--font-lora);
+}
+.font-muli{
+    font: normal bold 18px var(--font-muli);
+}
+.font-inter{
+    font: normal 300 18px var(--font-inter);
+}
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.bgcolor-black{
+    background-color: var(--color-black);
+}
+.spancolor{
+    color: var(--color-brown);
+}
+/* #global classes */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: left .5s ease;
+}
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+#header .nav-link{
+    margin: 1rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+#header .nav-link:hover{
+    color: var(--color-brown) !important;
+}
+#header .toggle-button{
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    border: 1px solid var(--color-border);
+}
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+/*Site main*/
+.site-banner .banner-area{
+    background: url(assets/Banner_image.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.site-banner .banner-area .author{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.site-banner .banner-area .author .author-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(assets/about.png) no-repeat;
+    background-size: 200px;
+    background-position: 40% 0;
+}
+.about .content .img img{
+    border:5px solid #3c3c3c;
+    width: 100%;
+    height: 90%;
+}
+.skill .bars p, .site-content .skill .bars span{
+    line-height: 10px;
+}
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+/*#Site main*/
